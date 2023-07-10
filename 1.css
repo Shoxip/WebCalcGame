@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Gill Sans", sans-serif;
+}
+
+html {
+    background-color: #B6C884;
+}
+
+.container {
+    width: 100%;
+}
+
+input {
+    background-color: rgba(217, 217, 217, 0.42) !important;
+    width: 100%;
+    height: 70px;
+    line-height: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0 0 black;
+    font-size: 24px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+}
+input::placeholder {
+    color: #727272;
+    font-size: 24px;
+    align-self: center;
+}
+
+.game-container {
+    background-color: black;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    height: 340px;
+    font-size: 30px;
+    font-weight: 600;
+    z-index: 999;
+}
+
+.game-container .first {
+    display: flex;
+    background-color: #668180;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+.game-container .second {
+    display: flex;
+    background-color: #829C9B;
+    height: 50%;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+    0 2px 2px rgba(0,0,0,0.11),
+    0 4px 4px rgba(0,0,0,0.11),
+    0 8px 8px rgba(0,0,0,0.11),
+    0 16px 16px rgba(0,0,0,0.11),
+    0 32px 32px rgba(0,0,0,0.11);
+}
+
+.game-container .operator {
+    font-size: 30px;
+    border-radius: 50%;
+    width: 73px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    background-color: #CFAEAE;
+    box-shadow: 0px 3px 0 rgba(82, 70, 70, 0.68);
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 133px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-container .game-desc {
+    color: #4B4B4B;
+    font-size: 15px;
+    position: absolute;
+    top: 310px;
+}
+
+.user-interaction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.game-statistics {
+    /*width: 100%;*/
+    padding: 20px;
+}
+.user-input-container {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: row;
+}
